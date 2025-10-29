@@ -1,0 +1,15 @@
+# serializer version: 1
+# name: test_binary_sensor[binary_sensor.muli_bike_alarm-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'safety',
+      'friendly_name': 'Muli Bike Alarm',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.muli_bike_alarm',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---

@@ -1,0 +1,23 @@
+# serializer version: 1
+# name: test_device_tracker[device_tracker.muli_bike_location-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'entity_picture': 'https://openclipart.org/image/128px/svg_to_png/345917',
+      'friendly_name': 'Muli Bike Location',
+      'gps_accuracy': 10,
+      'gps_signal_lost': False,
+      'icon': 'mdi:bicycle-cargo',
+      'last_position_time': '2024-01-15T10:29:00Z',
+      'last_signal_time': '2024-01-15T10:30:00Z',
+      'latitude': 52.52,
+      'longitude': 13.405,
+      'source_type': <SourceType.GPS: 'gps'>,
+    }),
+    'context': <ANY>,
+    'entity_id': 'device_tracker.muli_bike_location',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'not_home',
+  })
+# ---

@@ -1,0 +1,81 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "Device is already configured",
+      "wrong_account": "Please use the same email address ({email}) as the original configuration"
+    },
+    "error": {
+      "cannot_connect": "Failed to connect",
+      "invalid_auth": "Invalid authentication",
+      "unknown": "Unexpected error"
+    },
+    "step": {
+      "reauth_confirm": {
+        "data": {
+          "email": "Email",
+          "password": "Password"
+        },
+        "description": "Your tokens have expired. Please re-enter your credentials for {email}",
+        "title": "Reauthenticate Muli"
+      },
+      "user": {
+        "data": {
+          "email": "Email",
+          "password": "Password"
+        }
+      }
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "alarm": {
+        "name": "Alarm"
+      }
+    },
+    "device_tracker": {
+      "location": {
+        "name": "Location"
+      }
+    },
+    "sensor": {
+      "assistance_level": {
+        "name": "Assistance level"
+      },
+      "battery": {
+        "name": "Battery"
+      },
+      "battery_cycles": {
+        "name": "Battery cycles"
+      },
+      "firmware_version": {
+        "name": "Firmware version"
+      },
+      "gps_tracker_battery": {
+        "name": "GPS tracker battery"
+      },
+      "hardware_version": {
+        "name": "Hardware version"
+      },
+      "remaining_distance": {
+        "name": "Remaining distance"
+      },
+      "speed": {
+        "name": "Speed"
+      },
+      "status": {
+        "name": "Status"
+      },
+      "total_mileage": {
+        "name": "Total mileage"
+      }
+    },
+    "switch": {
+      "armed": {
+        "name": "Armed"
+      },
+      "movement_alarm": {
+        "name": "Movement alarm"
+      }
+    }
+  }
+}

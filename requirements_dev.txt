@@ -1,0 +1,10 @@
+# Development dependencies for Muli Home Assistant integration
+-r requirements_test.txt
+
+# Pre-commit hooks
+pre-commit>=4.0.0
+
+# Code quality tools
+ruff>=0.13.0
+mypy>=1.0.0
+codespell>=2.4.0

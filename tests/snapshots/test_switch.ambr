@@ -1,0 +1,29 @@
+# serializer version: 1
+# name: test_switches[switch.muli_bike_armed-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'switch',
+      'friendly_name': 'Muli Bike Armed',
+    }),
+    'context': <ANY>,
+    'entity_id': 'switch.muli_bike_armed',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'on',
+  })
+# ---
+# name: test_switches[switch.muli_bike_movement_alarm-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'switch',
+      'friendly_name': 'Muli Bike Movement alarm',
+    }),
+    'context': <ANY>,
+    'entity_id': 'switch.muli_bike_movement_alarm',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
