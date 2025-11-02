@@ -13,5 +13,5 @@
   "ssdp": [],
   "zeroconf": [],
   "version": "0.1.0",
-  "minimum_ha_version": "2024.6.0"
+  "minimum_ha_version": "2025.3.0"
 }
