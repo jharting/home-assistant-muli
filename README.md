@@ -43,16 +43,9 @@ This integration provides the following platforms and entities:
 
 ### Via HACS (Recommended)
 
-1. Open HACS in your Home Assistant instance
-2. Go to "Integrations"
-3. Click the three dots menu (⋮) in the top right
-4. Select "Custom repositories"
-5. Add this repository URL: `https://github.com/jharting/home-assistant-muli`
-6. Select category: "Integration"
-7. Click "Add"
-8. Search for "Muli" in HACS and click "Download"
-9. Restart Home Assistant
-10. Go to **Settings** → **Devices & Services** → **Add Integration** → Search for "Muli"
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=jharting&repository=home-assistant-muli&category=Integration)
+
+Then, go to **Settings** → **Devices & Services** → **Add Integration** → Search for "Muli"
 
 ### Manual Installation
 
