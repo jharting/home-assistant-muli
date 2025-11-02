@@ -1,6 +1,4 @@
 {
   "name": "Muli Bikes",
-  "homeassistant": "2025.3.0",
-  "domains": ["sensor", "binary_sensor", "device_tracker", "switch"],
-  "iot_class": "cloud_polling"
+  "homeassistant": "2025.3.0"
 }
