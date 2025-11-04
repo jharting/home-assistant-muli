@@ -1,0 +1,19 @@
+# serializer version: 1
+# name: test_select[select.muli_bike_alarm_mode-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Muli Bike Alarm mode',
+      'icon': 'mdi:bell',
+      'options': list([
+        'silent',
+        'audible',
+      ]),
+    }),
+    'context': <ANY>,
+    'entity_id': 'select.muli_bike_alarm_mode',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'silent',
+  })
+# ---

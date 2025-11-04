@@ -26,6 +26,7 @@ type MuliConfigEntry = ConfigEntry[MuliRuntimeData]
 _PLATFORMS: list[Platform] = [
     Platform.BINARY_SENSOR,
     Platform.DEVICE_TRACKER,
+    Platform.SELECT,
     Platform.SENSOR,
     Platform.SWITCH,
 ]

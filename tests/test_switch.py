@@ -36,7 +36,7 @@ async def test_switches(
         entity_registry, mock_config_entry.entry_id
     )
 
-    assert len(entity_entries) == 2
+    assert len(entity_entries) == 1
 
     # Verify states match snapshot
     for entity_entry in entity_entries:
@@ -83,35 +83,3 @@ async def test_switch_turn_off_armed(
     )
 
     mock_muli_client.set_monitored.assert_called_once_with(False)
-
-
-@pytest.mark.usefixtures("init_integration")
-async def test_switch_turn_on_movement_alarm(
-    hass: HomeAssistant,
-    mock_muli_client: MagicMock,
-) -> None:
-    """Test turning on the movement alarm switch."""
-    await hass.services.async_call(
-        SWITCH_DOMAIN,
-        SERVICE_TURN_ON,
-        {ATTR_ENTITY_ID: "switch.muli_bike_movement_alarm"},
-        blocking=True,
-    )
-
-    mock_muli_client.set_movement_alarm.assert_called_once_with(True)
-
-
-@pytest.mark.usefixtures("init_integration")
-async def test_switch_turn_off_movement_alarm(
-    hass: HomeAssistant,
-    mock_muli_client: MagicMock,
-) -> None:
-    """Test turning off the movement alarm switch."""
-    await hass.services.async_call(
-        SWITCH_DOMAIN,
-        SERVICE_TURN_OFF,
-        {ATTR_ENTITY_ID: "switch.muli_bike_movement_alarm"},
-        blocking=True,
-    )
-
-    mock_muli_client.set_movement_alarm.assert_called_once_with(False)

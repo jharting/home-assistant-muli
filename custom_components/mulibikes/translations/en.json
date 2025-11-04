@@ -69,12 +69,18 @@
         "name": "Total mileage"
       }
     },
+    "select": {
+      "alarm_mode": {
+        "name": "Alarm mode",
+        "state": {
+          "audible": "Audible",
+          "silent": "Silent"
+        }
+      }
+    },
     "switch": {
       "armed": {
         "name": "Armed"
-      },
-      "movement_alarm": {
-        "name": "Movement alarm"
       }
     }
   }

@@ -72,9 +72,10 @@ custom_components/mulibikes/
 ├── device_tracker.py        # GPS location tracking
 ├── entity.py                # Base entity class
 ├── manifest.json            # Integration metadata
+├── select.py                # Alarm mode select
 ├── sensor.py                # 10 sensor entities
 ├── strings.json             # User-facing text
-├── switch.py                # Armed and movement alarm switches
+├── switch.py                # Armed switch
 ├── translations/            # Generated translations
 │   └── en.json
 ├── README.md                # User documentation

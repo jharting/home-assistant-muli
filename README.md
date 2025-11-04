@@ -26,7 +26,12 @@ This integration provides the following platforms and entities:
 ### Switches
 
 - **Armed** - Arm or disarm the bike's security alarm
-- **Movement Alarm** - Enable or disable movement detection alarm
+
+### Selects
+
+- **Alarm Mode** - Choose alarm notification mode:
+  - **Silent** - Alarm triggers sensor state change only (no siren)
+  - **Audible** - Alarm triggers bike siren and sensor state change
 
 ### Binary Sensors
 
@@ -74,22 +79,22 @@ If your authentication tokens expire, Home Assistant will prompt you to re-enter
 
 ## Entities Reference
 
-| Entity              | Type           | Unit | Description                            |
-| ------------------- | -------------- | ---- | -------------------------------------- |
-| Battery             | Sensor         | %    | Main bike battery level                |
-| Total Mileage       | Sensor         | km   | Total distance traveled (odometer)     |
-| Remaining Distance  | Sensor         | km   | Estimated remaining range              |
-| Battery Cycles      | Sensor         | -    | Number of battery charge cycles        |
-| Assistance Level    | Sensor         | -    | Current electric assistance level      |
-| Speed               | Sensor         | km/h | Current speed                          |
-| Status              | Sensor         | -    | Product status information             |
-| Firmware Version    | Sensor         | -    | Bike firmware version (diagnostic)     |
-| Hardware Version    | Sensor         | -    | Bike hardware version (diagnostic)     |
-| GPS Tracker Battery | Sensor         | %    | GPS tracker battery level (diagnostic) |
-| Armed               | Switch         | -    | Security alarm armed/disarmed          |
-| Movement Alarm      | Switch         | -    | Movement detection enabled/disabled    |
-| Alarm               | Binary Sensor  | -    | Alarm triggered state                  |
-| Location            | Device Tracker | -    | Real-time GPS location                 |
+| Entity              | Type           | Unit | Description                              |
+| ------------------- | -------------- | ---- | ---------------------------------------- |
+| Battery             | Sensor         | %    | Main bike battery level                  |
+| Total Mileage       | Sensor         | km   | Total distance traveled (odometer)       |
+| Remaining Distance  | Sensor         | km   | Estimated remaining range                |
+| Battery Cycles      | Sensor         | -    | Number of battery charge cycles          |
+| Assistance Level    | Sensor         | -    | Current electric assistance level        |
+| Speed               | Sensor         | km/h | Current speed                            |
+| Status              | Sensor         | -    | Product status information               |
+| Firmware Version    | Sensor         | -    | Bike firmware version (diagnostic)       |
+| Hardware Version    | Sensor         | -    | Bike hardware version (diagnostic)       |
+| GPS Tracker Battery | Sensor         | %    | GPS tracker battery level (diagnostic)   |
+| Armed               | Switch         | -    | Security alarm armed/disarmed            |
+| Alarm Mode          | Select         | -    | Alarm notification mode (Silent/Audible) |
+| Alarm               | Binary Sensor  | -    | Alarm triggered state                    |
+| Location            | Device Tracker | -    | Real-time GPS location                   |
 
 ## Update Intervals
 
