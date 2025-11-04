@@ -70,9 +70,15 @@
     "switch": {
       "armed": {
         "name": "Armed"
-      },
-      "movement_alarm": {
-        "name": "Movement alarm"
+      }
+    },
+    "select": {
+      "alarm_mode": {
+        "name": "Alarm mode",
+        "state": {
+          "silent": "Silent",
+          "audible": "Audible"
+        }
       }
     },
     "binary_sensor": {
