@@ -2,6 +2,8 @@
 
 A Home Assistant integration for [Muli electric cargo bikes](https://muli-cycles.de/en), providing real-time monitoring and control of your bike's status, location, and security features.
 
+<img src="/docs/images/dashboard.png" alt="Muli Integration Dashboard" width="500">
+
 ## About Muli
 
 Muli manufactures electric cargo bikes designed for urban transportation and family use. This integration connects to the Muli cloud API (powered by Velco) to provide monitoring and control capabilities within Home Assistant.
