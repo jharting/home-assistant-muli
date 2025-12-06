@@ -42,7 +42,13 @@ class MuliAlarmSensor(MuliEntity, BinarySensorEntity):
     def is_on(self) -> bool | None:
         """Return true if alarm is triggered."""
         security_data = self.coordinator.data.get("securityData", {})
-        return security_data.get("alarm")
+        # Audible mode: alarm field is True
+        if security_data.get("alarm"):
+            return True
+        # Silent mode: suspiciousMovementSince field is present
+        if "suspiciousMovementSince" in security_data:
+            return True
+        return False
 
     @property
     def available(self) -> bool:
