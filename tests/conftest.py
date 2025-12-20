@@ -1,17 +1,37 @@
 """Common fixtures for the mulibikes tests."""
 
 from collections.abc import Generator
+from pathlib import Path
 from unittest.mock import AsyncMock, MagicMock, patch
 
 from homeassistant.const import CONF_ACCESS_TOKEN, CONF_EMAIL
 from homeassistant.core import HomeAssistant
 import pytest
 from pytest_homeassistant_custom_component.common import MockConfigEntry
+from pytest_homeassistant_custom_component.syrupy import HomeAssistantSnapshotExtension
+from syrupy.assertion import SnapshotAssertion
+from syrupy.location import PyTestLocation
 
 from custom_components.mulibikes.const import CONF_REFRESH_TOKEN, DOMAIN
 
 # Automatically enable custom integration loading
 pytest_plugins = "pytest_homeassistant_custom_component"
+
+
+class FixedSnapshotExtension(HomeAssistantSnapshotExtension):
+    """Snapshot extension with fixed directory path."""
+
+    @classmethod
+    def dirname(cls, *, test_location: PyTestLocation) -> str:
+        """Return the directory for the snapshot files."""
+        test_dir = Path(test_location.filepath).parent
+        return str(test_dir / "snapshots")
+
+
+@pytest.fixture
+def snapshot(snapshot: SnapshotAssertion) -> SnapshotAssertion:
+    """Return snapshot assertion fixture with fixed path."""
+    return snapshot.use_extension(FixedSnapshotExtension)
 
 
 @pytest.fixture(autouse=True)
